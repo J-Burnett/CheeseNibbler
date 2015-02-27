@@ -91,14 +91,13 @@ namespace CheeseNibbler
 
             //initialize the cheese and randomly place it on the grid, making sure that it 
             //does not occupay the same spot as the mouse
-            int cheeseXCoordinate = rng.Next(10);
-            int cheeseYCoordinate = rng.Next(10);
+
 
             do
             {
                 //Create random cheese coordinates to check
-                cheeseXCoordinate = rng.Next(10);
-                cheeseYCoordinate = rng.Next(10);
+                int cheeseXCoordinate = rng.Next(10);
+                int cheeseYCoordinate = rng.Next(10);
                 this.Cheese = Grid[cheeseXCoordinate, cheeseYCoordinate];
             }
             //Condition to be met to place the cheese on the grid
